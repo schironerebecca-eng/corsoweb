@@ -1,10 +1,27 @@
 // Configuration
 @import "bootstrap/scss/functions";
+
+$text: rgb(8, 23, 15);
+$background: rgb(229, 246, 235);
+$primary: rgb(39, 109, 65);
+$secondary: rgb(130, 184, 211);
+$accent: rgb(68, 112, 187);
+
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/variables-dark";
 @import "bootstrap/scss/maps";
 @import "bootstrap/scss/mixins";
-@import "bootstrap/scss/utilities";
+
+$theme-colors: (
+    "primary":    $secondary,
+    "secondary":  $primary,
+    "info":       $accent,
+    "pluto":   $indigo-600,
+    );
+    @import "bootstrap/scss/utilities";
+$utilities: map-remove($utilities, "float", "opacity", "overflow", "shadow", "position");
+
+
 
 // Layout & components
 @import "bootstrap/scss/root";
@@ -13,28 +30,21 @@
 @import "bootstrap/scss/images";
 @import "bootstrap/scss/containers";
 @import "bootstrap/scss/grid";
-@import "bootstrap/scss/tables";
-@import "bootstrap/scss/forms";
-@import "bootstrap/scss/buttons";
-@import "bootstrap/scss/transitions";
-@import "bootstrap/scss/dropdown";
-@import "bootstrap/scss/button-group";
+// @import "bootstrap/scss/tables";
+// @import "bootstrap/scss/transitions";
+// @import "bootstrap/scss/dropdown";
+// @import "bootstrap/scss/button-group";
 @import "bootstrap/scss/nav";
 @import "bootstrap/scss/navbar";
 @import "bootstrap/scss/card";
-@import "bootstrap/scss/accordion";
-@import "bootstrap/scss/breadcrumb";
-@import "bootstrap/scss/pagination";
-@import "bootstrap/scss/badge";
-@import "bootstrap/scss/alert";
-@import "bootstrap/scss/progress";
-@import "bootstrap/scss/list-group";
+// @import "bootstrap/scss/accordion";
+// @import "bootstrap/scss/badge";
+// @import "bootstrap/scss/alert";
+// @import "bootstrap/scss/list-group";
 @import "bootstrap/scss/close";
-@import "bootstrap/scss/toasts";
-@import "bootstrap/scss/modal";
-@import "bootstrap/scss/tooltip";
-@import "bootstrap/scss/popover";
-@import "bootstrap/scss/carousel";
+// @import "bootstrap/scss/toasts";
+// @import "bootstrap/scss/popover";
+// @import "bootstrap/scss/carousel";
 @import "bootstrap/scss/spinners";
 @import "bootstrap/scss/offcanvas";
 @import "bootstrap/scss/placeholders";

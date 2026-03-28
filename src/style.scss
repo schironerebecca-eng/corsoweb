@@ -31,7 +31,7 @@ $utilities: map-remove($utilities, "float", "opacity", "overflow", "shadow", "po
 // @import "bootstrap/scss/tables";
 // @import "bootstrap/scss/forms";
 @import "bootstrap/scss/buttons";
-// @import "bootstrap/scss/transitions";
+@import "bootstrap/scss/transitions";
 // @import "bootstrap/scss/dropdown";
 // @import "bootstrap/scss/button-group";
 @import "bootstrap/scss/nav";
@@ -46,13 +46,13 @@ $utilities: map-remove($utilities, "float", "opacity", "overflow", "shadow", "po
 // @import "bootstrap/scss/list-group";
 // @import "bootstrap/scss/close";
 // @import "bootstrap/scss/toasts";
-@import "bootstrap/scss/modal";
-@import "bootstrap/scss/tooltip";
+// @import "bootstrap/scss/modal";
+// @import "bootstrap/scss/tooltip";
 // @import "bootstrap/scss/popover";
 // @import "bootstrap/scss/carousel";
-@import "bootstrap/scss/spinners";
-@import "bootstrap/scss/offcanvas";
-@import "bootstrap/scss/placeholders";
+// @import "bootstrap/scss/spinners";
+// @import "bootstrap/scss/offcanvas";
+// @import "bootstrap/scss/placeholders";
 
 // Helpers
 @import "bootstrap/scss/helpers";
